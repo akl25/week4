@@ -42,5 +42,17 @@ echo ord($date);
 echo "<br><br>";
 
 //Part 8
+echo substr($date, -2);
+echo "<br><br>";
+
+//Part 9
+$date = explode("/", $date); //Separates string into array based on separator
+foreach ($date as $value) {  //Foreach loop to print out array elements
+	echo $value." ";
+}
+echo "<br><br>";
+
+//Part 10
+
 echo "<br><br>";
 ?>

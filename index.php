@@ -10,10 +10,12 @@ echo "The value of \$year: ";
 print_r($year);
 echo "<br><br>";
 
+//Part 2
 $date = str_replace("-", "/", $date); //replaces string"-" with "/" in $date
 echo $date;
 echo "<br><br>";
 
+//Part 3
 if (strcmp($date, $tar) > 0) {	//If current date is greater than target date
 	echo "the future";
 } elseif (strcmp($date, $tar) < 0) { //If current date is less than target date
@@ -23,6 +25,22 @@ if (strcmp($date, $tar) > 0) {	//If current date is greater than target date
 }
 echo "<br><br>";
 
+//Part 4
+echo strpos($date, "/")." ".strrpos($date, "/");  //Prints out first and last occurrence of string
+echo "<br><br>";
 
+//Part 5
+echo str_word_count($date);
+echo "<br><br>";
 
+//Part 6
+echo strlen($date); //Prints out number of characters in string
+echo "<br><br>";
+
+//Part 7
+echo ord($date);
+echo "<br><br>";
+
+//Part 8
+echo "<br><br>";
 ?>

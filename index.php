@@ -53,6 +53,15 @@ foreach ($date as $value) {  //Foreach loop to print out array elements
 echo "<br><br>";
 
 //Part 10
-
+foreach ($year as $value) {
+	switch ($value) {
+		case ($value % 4 == 0 && $value % 100 != 0 || $value % 400 == 0):
+			echo "True ";
+			break;
+		default:
+			echo "False ";
+			break;
+	};
+}
 echo "<br><br>";
 ?>

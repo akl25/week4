@@ -30,7 +30,7 @@ echo strpos($date, "/")." ".strrpos($date, "/");  //Prints out first and last oc
 echo "<br><br>";
 
 //Part 5
-echo str_word_count($date);
+echo strlen($date);
 echo "<br><br>";
 
 //Part 6
